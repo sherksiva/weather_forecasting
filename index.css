@@ -1,0 +1,80 @@
+body {
+	background: url(https://images.pond5.com/slow-motion-beautiful-water-drops-footage-011478062_prevstill.jpeg) no-repeat;
+	/* Keep the inherited background full size. */
+	background-attachment: fixed; 
+	background-size: cover;
+	/* display: grid; */
+	align-items: center;
+	justify-content: center;
+    height: 100vh;
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+	width: 30rem;
+    height: 100%;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    /* border-radius: 5px; */
+    position: absolute;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+    /* left: 0px; */
+    right: 0;
+    top: 0;
+}
+
+.container:before {
+	content: "";
+	position: absolute;
+	background: inherit;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+	filter: blur(10px);
+	margin: -20px;
+}
+.panel {
+    color: azure;
+    margin: 25px;
+}
+.panel h2 {
+    border-bottom: 1px solid;
+}
+.panel ul li {
+    height:25px;
+}
+.panel ul {
+    margin: 0;
+    padding: 0;
+    list-style-type:none
+}
+
+.glow {
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.sub_head {
+    width: 40%;
+    border-bottom: 1px solid;
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #d0c0c0, 0 0 30px #a28b97, 0 0 40px #1b1417, 0 0 50px #0c0107, 0 0 60px #171114, 0 0 70px #463d41;
+    }
+  
+    
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #4a3741, 0 0 40px #1d1519, 0 0 50px #25181f, 0 0 60px #131112, 0 0 70px #230815, 0 0 80px #0e060a;
+    }
+    
+  }
